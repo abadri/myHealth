@@ -22,7 +22,16 @@ $ mongod
 ```
 
 
+##External Hosting 
 
+
+###Node App
+Using Heroku to host the app
+
+How to Heroku: https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
+
+
+###Mongo DB
 https://mongolab.com
 
 
@@ -34,3 +43,7 @@ To connect using a driver via the standard MongoDB URI (what's this?):
 ``` 
 mongodb://<dbuser>:<dbpassword>@ds037175.mongolab.com:37175/health
 ```
+
+
+
+
