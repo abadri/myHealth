@@ -9,9 +9,9 @@ $ node server.js
 ##Sample endpoints
 
 
-Get Contacts: http://localhost:5000/api/getContacts/<UID>
-Get Appointments: http://localhost:5000/api/getAppointments/<UID>
-Get Presciptions: http://localhost:5000/api/getPrescriptions/<UID>
+* Get Contacts: http://localhost:5000/api/getContacts/<UID>
+* Get Appointments: http://localhost:5000/api/getAppointments/<UID>
+* Get Presciptions: http://localhost:5000/api/getPrescriptions/<UID>
 
 where <UID> is a parameter e.g. http://localhost:5000/api/getContacts/1234
 
