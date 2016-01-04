@@ -1,3 +1,21 @@
+##Steps
+```
+$ git clone https://github.com/abadri/myHealth.git
+$ cd myHealth/
+$ npm install .
+$ node server.js 
+```
+
+##Sample endpoints
+
+
+Get Contacts: http://localhost:5000/api/getContacts/<UID>
+Get Appointments: http://localhost:5000/api/getAppointments/<UID>
+Get Presciptions: http://localhost:5000/api/getPrescriptions/<UID>
+
+where <UID> is a parameter e.g. http://localhost:5000/api/getContacts/1234
+
+
 ##Installing Mongo DB on MAC
 
    
