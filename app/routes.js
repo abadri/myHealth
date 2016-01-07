@@ -87,6 +87,16 @@ module.exports = function(app) {
         res.json(contacts);
     });
 
+        // sample api route
+    app.post('/api/authenticate', function(req, res) {
+        var contacts = {
+            name: 'John Doe',
+            uid: 1234
+        };
+        res.json(contacts);
+    });
+
+
     // route to handle creating goes here (app.post)
     // route to handle delete goes here (app.delete)
 
