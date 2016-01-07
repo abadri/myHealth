@@ -89,6 +89,7 @@ module.exports = function(app) {
 
         // sample api route
     app.post('/api/authenticate', function(req, res) {
+        
         var user = {
             name: 'John Doe',
             phone: '408 123 1234',
