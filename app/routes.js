@@ -7,23 +7,29 @@ module.exports = function(app) {
     // sample api route
     app.get('/api/getContacts/:uid', function(req, res) {
         var contacts = [{
-            name: 'Abilash',
-            phone: '408 123 4567'
+            name: 'Anna',
+            phone: '408 123 4567',
+            info: 'Doctor'
         }, {
             name: 'John Doe',
-            phone: '408 123 1223'
+            phone: '408 123 1223',
+            info:'co-ordinator'
         }, {
             name: 'David M',
-            phone: '123 121 1223'
+            phone: '123 121 1223',
+            info:'Doctor'
         }, {
             name: 'Hari',
-            phone: '408 123 1566'
+            phone: '408 123 1566',
+            info:'insurance agent'
         }, {
             name: 'Jan Yan',
-            phone: '408 123 3333'
+            phone: '408 123 3333',
+            info:'doctor'
         }, {
             name: 'Kaiser Santa Clara',
-            phone: '180 000 0000'
+            phone: '180 000 0000',
+            info:'Hospital'
         }];
         res.json(contacts);
     });
@@ -31,26 +37,32 @@ module.exports = function(app) {
 
      // sample api route
     app.get('/api/getPrescriptions/:uid', function(req, res) {
-        var contacts = [{
+        var medicines = [{
             name: 'Abacavir Sulfate',
-            qty: '10'
+            qty: '10',
+            time:'10:30 am'
         }, {
             name: 'Plenaxis',
-            qty: '2'
+            qty: '2',
+            time:'12.00 pm'
         }, {
             name: 'Accolate',
-            qty: '50'
+            qty: '50',
+            time:'3:00 pm'
         }, {
             name: 'Aminosyn HF 8%',
-            qty: '23'
+            qty: '23',
+            time:'7:00 pm'
         }, {
             name: 'Azulfidine EN',
-            qty: '44'
+            qty: '44',
+            time:'5:00 pm'
         }, {
             name: 'Azactam',
-            qty: '34'
+            qty: '34',
+            time:'9:00 am'
         }];
-        res.json(contacts);
+        res.json(medicines);
     });
 
     // sample api route
