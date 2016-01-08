@@ -101,12 +101,23 @@ module.exports = function(app) {
 
         // sample api route
     app.post('/api/authenticate', function(req, res) {
+        var data = req.body;
+        var user;
+
+
+        if(data.username === 123) {
+            user = {
+                error: 'User not found'
+            };
+        } else {
+            user = {
+                name: 'John Doe',
+                phone: '408 123 1234',
+                uid: 1234
+            };
+        }
+
         
-        var user = {
-            name: 'John Doe',
-            phone: '408 123 1234',
-            uid: 1234
-        };
         res.json(user);
     });
 
